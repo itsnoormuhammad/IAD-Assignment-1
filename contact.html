@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+   rel="stylesheet"
+   integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
+    crossorigin="anonymous">
+    
+
+
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  background: rgba(32, 80, 143, 0.575)
+}
+
+h1 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 35px;
+  color: white;
+}
+
+p {
+  text-align: center;
+  margin: 15px auto 0px auto;
+  font-size: 16px;
+  width: 80%;
+}
+.contact-form {
+  margin: 35px auto 0px auto;
+  width: 80%;
+  color: white;
+}
+
+.contact-form label {
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.contact-form input {
+  padding: 12px 20px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: rgb(255, 255, 255);
+  font-size: 18px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contact-form input:focus {
+  border-bottom: 2px solid #1a883f;
+}
+
+.contact-form textarea {
+  padding: 12px 20px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: rgb(255, 255, 255);
+  font-size: 18px;
+  border-radius: 3px;
+  width: 100%;
+  font-family: inter;
+  font-weight: normal;
+}
+
+.contact-form textarea:focus {
+  border-bottom: 2px solid #1a883f;
+}
+
+.contact-form button {
+  font-size: 19px;
+  width: 100%;
+  margin-top: 25px;
+  border: none;
+  padding: 12px 20px;
+  background-color: #22b352;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border-bottom: 3px solid #1a883f;
+}
+
+.contact-form button:hover {
+  background-color: #1a883f;
+  border-bottom: 3px solid #22b352;
+}
+
+@media all and (min-width: 1000px) {
+  .contact-form {
+    width: 40%;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .contact-form {
+    width: 30%;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>Contact us</h1>
+    <p></p>
+    <form class="contact-form">
+      <label for="">Name</label><br />
+      <input class="name" type="text" placeholder= " enter your  name" /><br />
+      <label for="">Email</label><br />
+      <input class="email" type="email" placeholder= " enter your  email" /><br />
+     
+  
+      <label for="">Message</label><br />
+      <textarea
+        class="message"
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="message"
+      ></textarea
+      ><br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
